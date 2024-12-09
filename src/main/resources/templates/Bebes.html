@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articulos para bebes</title>
+    <link th:href="@{/css/styles.css}" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="/img/logo.png" alt="Logo" class="logo">
+        <div class="container">
+            <h1><b>Almacenes Barreiros Novelle</b></h1>
+        </div>
+    </header>
+    <nav>
+        <p>
+            <a th:href="@{/}">| Inicio</a>
+            <a th:href="@{/ayuda}">| Ayuda</a>
+            <a th:href="@{/about-us}">| Sobre Nosotros <img src="/img/about_us.gif" alt="Informacion" class="about_us"></a>
+        </p>
+        <ul>
+            <li><a th:href="@{/sabanas}">| Sábanas</a></li>
+            <li><a th:href="@{/edredones}">| Edredones</a></li>
+            <li><a th:href="@{/colchones}">| Colchones</a></li>
+            <li><a th:href="@{/alfombras}">| Alfombras</a></li>
+            <li><a th:href="@{/cojines}">| Cojines</a></li>
+            <li><a th:href="@{/almohadas}">| Almohadas</a></li>
+            <li><a th:href="@{/pijamas}">| Pijamas</a></li>
+            <li><a th:href="@{/fundas}">| Fundas</a></li>
+            <li><a th:href="@{/bebes}">| Bebés</a></li>
+            <li><a href="Comprar.html">| Comprar <img src="/img/carrito.png" alt="Comprar"></a></li>
+        </ul>
+    </nav>
+    <h1 class="centrar-titulo">Lista de Artículos para Bebés</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Categoría</th>
+                <th>Material</th>
+                <th>Color</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="bebe : ${bebes}">
+                <td th:text="${bebe.id}"></td>
+                <td th:text="${bebe.categoria}"></td>
+                <td th:text="${bebe.material}"></td>
+                <td th:text="${bebe.color}"></td>
+                <td th:text="${bebe.precio}"></td>
+            </tr>
+        </tbody>
+    </table>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p>Dirección: Rúa Ramón Cabanillas 12, A Coruña</p>
+                <p>Teléfono: +34 611 40 89 22</p>
+                <p>Email: barreiros.novelle@gmail.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Horario de Apertura</h3>
+                <p>Lunes - Viernes: 9:45 - 13:45 y 17:00 - 20:00</p>
+                <p>Sábado: 10:00 - 14:00 </p>
+                <p>Domingo: Cerrado</p>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces rápidos</h3>
+                <p><a th:href="@{/privacidad}">Política de privacidad</a></p>
+                <p><a th:href="@{/terminos}">Términos y condiciones</a></p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Derechos reservados &copy; 2024 Almacenes Barreiros Novelle</p>
+        </div>
+    </footer>
+</body>
+</html>

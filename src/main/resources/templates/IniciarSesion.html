@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesion</title>
+    <script th:src="@{/js/iniciosesion.js}"></script>
+    <link rel="stylesheet" th:href="@{/css/iniciosesion.css}">
+</head>
+<body>
+    <h1>Iniciar sesión</h1>
+    <form id="form" action="/clientes/iniciar-sesion" method="post">
+        <label for="nombre"><b>Nombre de usuario</b><br>
+            <input type="text" name="nombre" id="nombre" value="Nombre y apellidos"><br><br>
+        </label>
+        <label for="password"><b>Contraseña</b><br>
+            <input type="text" name="password" id="password"><br><br>
+        </label>
+        <input type="submit" name="Continuar" id= "Continuar" value="Continuar"><br><br>
+    </form>
+</body>
+</html>

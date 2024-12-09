@@ -1,0 +1,44 @@
+/* Estilo global */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e3f2fd; /* Azul claro */
+    color: #0d47a1; /* Azul oscuro */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    flex-direction: column; /* Garantiza que los elementos estén uno debajo del otro */
+}
+
+/* Estilo para el encabezado */
+h1 {
+    color: #1565c0; /* Azul intermedio */
+    font-size: 2.5rem;
+    margin-bottom: 20px; /* Espacio entre h1 y el siguiente elemento */
+}
+
+/* Estilo para el párrafo */
+p {
+    font-size: 1.2rem;
+    color: #0d47a1; /* Azul oscuro */
+    margin: 0 0 30px; /* Espacio debajo del párrafo */
+}
+
+/* Estilo para el enlace */
+a {
+    text-decoration: none;
+    color: #ffffff; /* Blanco */
+    background-color: #1e88e5; /* Azul brillante */
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    margin-top: 10px; /* Espacio adicional si es necesario */
+}
+
+a:hover {
+    background-color: #1565c0; /* Azul más oscuro al pasar el ratón */
+}

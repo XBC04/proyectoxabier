@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almacenes Barreiros Novelle</title>
+    <link th:href="@{/css/home.css}" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="/img/logo.png" alt="Logo" class="logo">
+        <div class="top-right-links">
+            <p><a th:href="@{/clientes/crear}"><img src="/img/cuenta.png" alt="Imagen" class="left-image">Crear cuenta</a></p>
+            <p><a th:href="@{/clientes/iniciar-sesion}"><img src="/img/cuenta.png" alt="Imagen" class="left-image">Iniciar sesión</a></p>
+        </div>
+        <div class="container">
+            <h1><b>Almacenes Barreiros Novelle</b></h1>
+        </div>
+    </header>
+    <nav>
+        <p>
+            <a th:href="@{/}">| Inicio </a>
+            <a th:href="@{/ayuda}">| Ayuda</a>
+            <a th:href="@{/about-us}">| Sobre Nosotros <img src="/img/about_us.gif" alt="Informacion" class="about_us"></a>
+        </p>
+        <ul>
+            <li><a th:href="@{/sabanas}">| Sábanas</a></li>
+            <li><a th:href="@{/edredones}">| Edredones</a></li>
+            <li><a th:href="@{/colchones}">| Colchones</a></li>
+            <li><a th:href="@{/alfombras}">| Alfombras</a></li>
+            <li><a th:href="@{/cojines}">| Cojines</a></li>
+            <li><a th:href="@{/almohadas}">| Almohadas</a></li>
+            <li><a th:href="@{/pijamas}">| Pijamas</a></li>
+            <li><a th:href="@{/fundas}">| Fundas</a></li>
+            <li><a th:href="@{/bebes}">| Bebés</a></li>
+            <li><a href="Comprar.html">| Comprar <img src="/img/carrito.png" alt="Comprar"></a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <aside>
+            <h1><b>OFERTAS</b></h1><br>
+            <li th:each="oferta : ${ofertas}">
+                <h3 th:text="${oferta.nombre}">Nombre de la oferta</h3>
+                <p th:text="${oferta.descripcion}">Descripción de la oferta</p>
+                <p>
+                    <strong>Antes:</strong>
+                    <span th:text="${oferta.precioAntes}">49.99€</span>
+                </p>
+                <p>
+                    <strong>Ahora:</strong>
+                    <span th:text="${oferta.precioAhora}">39.99€</span>
+                </p>
+            </li>
+        </aside>
+        <div class="image-container">
+            <img src="/img/mantas.jpg" alt="Mantas">
+        </div>
+        <main>
+            <h2>Descubre Nuestras Ofertas Especiales</h2>
+            <p>En Almacenes Barreiros Novelle, ofrecemos una amplia gama de productos de alta calidad a precios <br>
+                competitivos. Explore nuestras ofertas especiales y encuentre el complemento perfecto para su hogar:
+            </p>
+            
+            <h3>Productos Destacados</h3>
+            <ul>
+                <li>Edredones suaves y acogedores para todas las estaciones.</li>
+                <li>Colchones que garantizan un sueño reparador.</li>
+                <li>Mantas de alta calidad para mantenerte abrigado en las noches frías.</li>
+                <li>Almohadas diseñadas para brindar apoyo y comodidad.</li>
+            </ul>
+            
+            <h3>Ofertas Exclusivas</h3>
+            <p>Aproveche nuestras ofertas exclusivas y descuentos especiales en una amplia selección de productos. <br>
+                ¡No pierda la oportunidad de renovar su hogar con estilo!
+            </p>
+            
+            <h3>Consejos de Decoración</h3>
+            <p>¿Necesita inspiración para decorar su dormitorio? Consulte nuestros consejos de decoración para <br>
+                obtener ideas y sugerencias sobre cómo crear un ambiente acogedor y elegante.
+            </p>
+            
+            <h3>Compra en Línea</h3>
+            <p>Visite nuestra tienda en línea para explorar nuestro catálogo completo y realizar compras seguras y <br> 
+                convenientes desde su hogar. ¡Haz que tus sueños se hagan realidad con nosotros!
+            </p>
+        </main>
+        
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p>Dirección: Rúa Ramón Cabanillas 12, A Coruña</p>
+                <p>Teléfono: +34 611 40 89 22</p>
+                <p>Email: barreiros.novelle@gmail.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Horario de Apertura</h3>
+                <p>Lunes - Viernes: 9:45 - 13:45 y 17:00 - 20:00</p>
+                <p>Sábado: 10:00 - 14:00 </p>
+                <p>Domingo: Cerrado</p>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces rápidos</h3>
+                <p><a th:href="@{/privacidad}">Política de privacidad</a></p>
+                <p><a th:href="@{/terminos}">Términos y condiciones</a></p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Derechos reservados &copy; 2024 Almacenes Barreiros Novelle</p>
+        </div>
+    </footer>
+</body>
+</html>

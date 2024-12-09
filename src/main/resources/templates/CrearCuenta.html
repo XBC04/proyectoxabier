@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear cuenta</title>
+    <script th:src="@{/js/creacuenta.js}"></script>
+    <link rel="stylesheet" th:href="@{/css/crearcuenta.css}">
+    
+</head>
+<body>
+    <h1>Crear cuenta</h1>
+    <form id="form" action="/clientes/crear" method="post">
+        <label for="nombre"><b>Nombre</b><br>
+            <input type="text" name="nombre" id="nombre" value="Nombre y apellidos"><br><br>
+        </label>
+
+        <label for="NumOCor"><b>Número de móvil o dirección de correo electrónico</b><br>
+            <input type="text" name="NumOCor" id="NumOCor"><br><br>
+        </label>
+
+        <label for="password"><b>Contraseña</b><br>
+            <input type="text" name="password" id="password"><br><br>
+        </label>
+        <nav id="caracteres">La contraseña debe tener 6 caracteres como mínimo</nav>
+
+        <label for="checkpassword"><b>Confirma tu contraseña</b><br>
+            <input type="text" name="checkpassword" id="checkpassword"><br><br>
+        </label>
+
+        <input type="submit" name="Continuar" id= "Continuar" value="Continuar"><br><br>
+
+        <div>
+            ¿Ya tienes una cuenta? <a th:href="@{/clientes/iniciar-sesion}">Iniciar sesión</a>
+        </div>
+    </form>
+</body>
+</html>

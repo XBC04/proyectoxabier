@@ -1,0 +1,176 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.logo {
+    width: 64px;
+    height: auto;
+    margin-right: 20px;
+}
+
+header {
+    background-color: #38B6FF;
+    color: white;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.top-right-links {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.top-right-links p {
+    margin: 0;
+}
+
+.top-right-links a {
+    text-decoration: underline;
+    color: white;
+    margin-left: 20px;
+    vertical-align: middle;
+}
+
+.left-image {
+    width: 30px; 
+    height: 30px; 
+    transition: transform 0.3s ease; 
+}
+
+.left-image:hover {
+    transform: rotate(360deg);
+}
+
+nav {
+    background-color: #A4CEFA;
+    padding: 3px;
+    justify-content: space-between;
+    display: flex; 
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+
+nav p, nav ul {
+    height: 25px;
+    line-height: 25px; 
+}
+
+nav p a, nav ul li a {
+    display: inline-block; /* Asegurar que los elementos ocupen el mismo espacio */
+    vertical-align: middle; 
+}
+
+nav p a {
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-right: 40px;
+    height: 40px;   
+    line-height: 40px; 
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: inherit;
+    vertical-align: middle;
+}
+
+.about_us {
+    width: 30px;
+    height: 15px;
+}
+
+nav img {
+    width: 50px;
+    height: 15px;
+}
+
+.content {
+    padding: 20px;
+}
+
+aside {
+    float: right;
+    width: 25%;
+    padding: 20px;
+    background-color: #A4CEFA;
+    color: white;
+    padding-bottom: 7%;
+}
+
+aside a {
+    color: white;
+    font-style: italic;
+}
+
+aside h1 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+main {
+    color: #38B6FF
+}
+
+main h2 {
+    margin-left: 5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+footer {
+    background-color: #0097A7;
+    color: white;
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+}
+
+.footer-section {
+    flex: 1;
+    text-align: left;
+    padding-left: 10%;
+}
+
+.footer-section p {
+    margin: 0;
+}
+
+.footer-section a {
+    color: white;
+}
+
+.image-container {
+    position: absolute;
+    top: 49%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+}
+
+.image-container img {
+    width: 78%;
+}
