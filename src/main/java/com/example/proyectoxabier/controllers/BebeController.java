@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
-import com.example.proyectoxabier.models.Almohada;
 import com.example.proyectoxabier.models.Bebe;
 import com.example.proyectoxabier.services.BebeService;
 
@@ -28,7 +27,7 @@ public class BebeController {
 
     @GetMapping("/bebes/crear")
     public String mostrarFormularioCrear(Model model) {
-        model.addAttribute("bebe", new Almohada());
+        model.addAttribute("bebe", new Bebe());
         return "crearBebes";
     }
 

@@ -21,12 +21,4 @@ public class ColchonService {
     public Colchon guardarColchon(Colchon colchon) {
         return colchonRepository.save(colchon);
     }
-
-    public Colchon obtenerPorId(Long id) {
-        return colchonRepository.findById(id).orElse(null);
-    }
-
-    public void eliminarColchon(Long id) {
-        colchonRepository.deleteById(id);
-    }
 }
