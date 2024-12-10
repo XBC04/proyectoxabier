@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alfombras</title>
-    <link th:href="@{/css/styles.css}" rel="stylesheet">
+    <title>Crear Nueva Alfombra</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
 </head>
 <body>
     <header>
@@ -32,28 +32,25 @@
             <li><a th:href="@{/comprar}">| Comprar <img src="/img/carrito.png" alt="Comprar"></a></li>
         </ul>
     </nav>
-    <h1 class="centrar-titulo">Lista de Alfombras</h1>
-    <table>
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Nombre</th>
-                <th>Material</th>
-                <th>Tamaño</th>
-                <th>Precio</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr th:each="alfombra : ${alfombras}">
-                <td th:text="${alfombra.id}"></td>
-                <td th:text="${alfombra.nombre}"></td>
-                <td th:text="${alfombra.material}"></td>
-                <td th:text="${alfombra.tamaño}"></td>
-                <td th:text="${alfombra.precio}"></td>
-            </tr>
-        </tbody>
-    </table>
-    <a href="/alfombras/crear" class="crear"><button>Añadir Nueva Alfombra</button></a>
+    <main>
+        <h1>Crear Nueva Alfombra</h1>
+        <form action="/alfombras/crear" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+
+            <label for="material">Material:</label>
+            <input type="text" id="material" name="material" required><br><br>
+
+            <label for="tamaño">Tamaño:</label>
+            <input type="text" id="tamaño" name="tamaño" required><br><br>
+
+            <label for="precio">Precio:</label>
+            <input type="number" id="precio" name="precio" step="0.01" required><br><br>
+
+            <button type="submit">Crear Alfombra</button>
+        </form>
+        <br>
+    </main>
     <footer>
         <div class="footer-container">
             <div class="footer-section">
