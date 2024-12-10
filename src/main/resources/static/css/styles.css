@@ -235,7 +235,7 @@ footer {
 }
 
 .btn-azul {
-    background-color: blue;
+    background-color: #007bff;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -244,5 +244,5 @@ footer {
 }
 
 .btn-azul:hover {
-    background-color: darkblue;
+    background-color: #0056b3;
 }
