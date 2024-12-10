@@ -6,7 +6,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
 
+import com.example.proyectoxabier.models.Almohada;
 import com.example.proyectoxabier.models.Bebe;
 import com.example.proyectoxabier.services.BebeService;
 
@@ -21,5 +24,17 @@ public class BebeController {
         List<Bebe> bebes = bebeService.obtenerTodos();
         model.addAttribute("bebes", bebes);
         return "bebes";
+    }
+
+    @GetMapping("/bebes/crear")
+    public String mostrarFormularioCrear(Model model) {
+        model.addAttribute("bebe", new Almohada());
+        return "crearBebes";
+    }
+
+    @PostMapping("/bebes/crear")
+    public String crearBebe(@ModelAttribute Bebe bebe) {
+        bebeService.guardarBebe(bebe);
+        return "redirect:/bebes";
     }
 }
