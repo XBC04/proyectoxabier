@@ -217,3 +217,19 @@ footer {
 .footer-section a {
     color: white;
 }
+
+.crear button {
+    background-color: #007bff; /* Color azul */
+    color: white; /* Texto blanco */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de la fuente */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de mano al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Transición suave al pasar el ratón */
+}
+
+/* Cambiar color al pasar el ratón */
+.crear button:hover {
+    background-color: #0056b3; /* Color azul más oscuro cuando se pasa el ratón */
+}
