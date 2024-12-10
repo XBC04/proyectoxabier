@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import com.example.proyectoxabier.exceptions.IniciarSesionException;
 import com.example.proyectoxabier.services.ClienteService;
 
 @Controller
@@ -39,5 +40,12 @@ public class ClienteController {
     @GetMapping("/iniciar-sesion")
     public String mostrarInicioSesion() {
         return "IniciarSesion"; 
+    }
+
+    @PostMapping("/iniciar-sesion")
+    public String iniciarSesion(@RequestParam String nombre,
+                                @RequestParam String password,
+                                Model model) {
+                throw new IniciarSesionException("No se ha podido iniciar sesión.");
     }
 }
