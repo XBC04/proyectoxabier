@@ -1,6 +1,7 @@
 package com.example.proyectoxabier.services;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -20,5 +21,9 @@ public class AlmohadaService {
 
     public Almohada guardarAlmohada(Almohada almohada) {
         return almohadaRepository.save(almohada);
+    }
+
+    public Optional<Almohada> obtenerPorId(Long id) {
+        return almohadaRepository.findById(id);
     }
 }
