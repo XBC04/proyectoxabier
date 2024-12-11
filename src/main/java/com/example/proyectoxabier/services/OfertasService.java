@@ -20,8 +20,4 @@ public class OfertasService {
     public Ofertas guardarOferta(Ofertas oferta) {
         return ofertasRepository.save(oferta);
     }
-
-    public void eliminarOferta(Long id) {
-        ofertasRepository.deleteById(id);
-    }
 }

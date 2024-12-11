@@ -1,6 +1,7 @@
 package com.example.proyectoxabier.services;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -19,5 +20,9 @@ public class SabanaService {
 
     public Sabana guardarSabana(Sabana sabana) {
         return sabanaRepository.save(sabana);
+    }
+
+    public Optional<Sabana> obtenerPorId(Long id) {
+        return sabanaRepository.findById(id);
     }
 }

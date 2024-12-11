@@ -1,6 +1,7 @@
 package com.example.proyectoxabier.services;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -20,5 +21,9 @@ public class CojinService {
 
     public Cojin guardarCojin(Cojin cojin) {
         return cojinRepository.save(cojin);
+    }
+
+    public Optional<Cojin> obtenerPorId(Long id) {
+        return cojinRepository.findById(id);
     }
 }

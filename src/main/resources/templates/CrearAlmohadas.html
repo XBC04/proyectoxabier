@@ -35,7 +35,7 @@
     <main>
         <h1 class="centrar-titulo">Añadir Nueva Almohada</h1>
 
-        <form action="/almohadas/crear" method="post" th:object="${almohada}">
+        <form th:action="@{/almohadas/crear}" method="post" th:object="${almohada}">
             <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" th:field="*{nombre}" required/><br><br>
         

@@ -1,6 +1,7 @@
 package com.example.proyectoxabier.services;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -20,5 +21,9 @@ public class FundaService {
 
     public Funda guardarFunda(Funda funda) {
         return fundaRepository.save(funda);
+    }
+
+    public Optional<Funda> obtenerPorId(Long id) {
+        return fundaRepository.findById(id);
     }
 }
