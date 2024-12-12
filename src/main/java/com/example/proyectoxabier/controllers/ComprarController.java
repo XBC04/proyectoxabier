@@ -10,6 +10,6 @@ public class ComprarController {
 
     @GetMapping("/comprar")
     public String manejarComprar() {
-        throw new ComprarAccessException("No se puede acceder al área de compras");
+        throw new ComprarAccessException("No se puede acceder al área de compras, se añadirá en futuras actualizaciones.");
     }
 }

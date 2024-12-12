@@ -1,41 +1,29 @@
-/* Estilo global */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial;
     background-color: #e3f2fd; 
-    color: #0d47a1; 
-    margin: 0;
-    padding: 0;
+    color: #333333; 
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 900px;
     text-align: center;
     flex-direction: column; 
 }
 
 h1 {
     color: #1565c0; 
-    font-size: 2.5rem;
     margin-bottom: 20px; 
-}
-
-p {
-    font-size: 1.2rem;
-    color: #0d47a1; 
-    margin: 0 0 30px; 
 }
 
 a {
     text-decoration: none;
     color: #ffffff;
-    background-color: #1e88e5; 
+    background-color: #38b6ff; 
     padding: 10px 20px;
     border-radius: 5px;
-    font-size: 1rem;
     transition: background-color 0.3s ease;
-    margin-top: 10px; 
 }
 
 a:hover {
-    background-color: #1565c0; 
+    background-color: #2a90cc; 
 }
