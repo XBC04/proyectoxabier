@@ -1,28 +1,25 @@
-/* General styles for the body */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #e3f2fd; /* Light blue background */
-    color: #1e3a5f; /* Deep blue text */
+    background-color: #e3f2fd; 
+    color: #1e3a5f; 
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    flex-direction: column; /* Stack elements vertically */
+    flex-direction: column; 
 }
 
-/* Header styles */
 h1 {
     font-size: 2.5rem;
-    color: #1565c0; /* Bright blue */
+    color: #1565c0; 
     text-align: center;
-    margin-bottom: 15px; /* Reduced spacing */
+    margin-bottom: 15px; 
     font-weight: bold;
 }
 
-/* Form container styles */
 form {
-    background-color: #ffffff; /* White for contrast */
+    background-color: #ffffff; 
     padding: 25px 35px;
     border-radius: 10px;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Softer shadow */
@@ -31,31 +28,29 @@ form {
     border: 1px solid #90caf9; /* Light blue border */
 }
 
-/* Label styles */
 label {
     font-weight: 600;
     font-size: 1.1rem;
     display: block;
-    color: #1e3a5f; /* Dark blue */
+    color: #1e3a5f; 
     margin-bottom: 8px;
 }
 
-/* Input field styles */
 input[type="text"] {
     width: 100%;
     padding: 12px;
     margin-top: 5px;
     margin-bottom: 20px;
-    border: 1px solid #64b5f6; /* Soft blue */
+    border: 1px solid #64b5f6; 
     border-radius: 6px;
     font-size: 1rem;
-    background-color: #e3f2fd; /* Light blue background */
-    color: #1e3a5f; /* Dark blue text */
+    background-color: #e3f2fd; 
+    color: #1e3a5f; 
 }
 
 /* Submit button styles */
 input[type="submit"] {
-    background-color: #1565c0; /* Deep blue */
+    background-color: #1565c0; 
     color: #ffffff;
     padding: 12px 18px;
     border: none;
@@ -68,12 +63,11 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #0d47a1; /* Darker blue */
+    background-color: #0d47a1; 
 }
 
-/* Error field styles */
 .error {
-    border: 1px solid #e57373; /* Soft red border */
-    background-color: #ffebee; /* Light red background */
+    border: 1px solid #e57373; 
+    background-color: #ffebee; 
 }
 

@@ -64,7 +64,7 @@ nav p, nav ul {
 }
 
 nav p a, nav ul li a {
-    display: inline-block; /* Asegurar que los elementos ocupen el mismo espacio */
+    display: inline-block; 
     vertical-align: middle; 
 }
 

@@ -1,18 +1,15 @@
-/* Estilo global para el body */
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
 }
 
-/* Logo */
 .logo {
     width: 64px;
     height: auto;
     margin-right: 20px;
 }
 
-/* Estilo del header */
 header {
     background-color: #38B6FF;
     color: white;
@@ -21,12 +18,10 @@ header {
     align-items: center;
 }
 
-/* Eliminamos los enlaces de iniciar sesión y crear cuenta */
 .top-right-links {
     display: none;
 }
 
-/* Estilo del nav */
 nav {
     background-color: #A4CEFA;
     padding: 3px;
@@ -37,14 +32,13 @@ nav {
     text-decoration: none;
 }
 
-/* Enlaces principales (Inicio, Ayuda, Sobre Nosotros) */
 nav p, nav ul {
     height: 25px;
     line-height: 25px; 
 }
 
 nav p a, nav ul li a {
-    display: inline-block; /* Asegurar que los elementos ocupen el mismo espacio */
+    display: inline-block; 
     vertical-align: middle; 
 }
 
@@ -54,7 +48,6 @@ nav p a {
     text-decoration: none;
 }
 
-/* Estilo de los elementos de la lista (enlaces a categorías) */
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -75,7 +68,6 @@ nav ul li a {
     vertical-align: middle;
 }
 
-/* Estilo de la imagen (Sobre nosotros) */
 .about_us {
     width: 30px;
     height: 15px;
@@ -86,7 +78,6 @@ nav img {
     height: 15px;
 }
 
-/* Estilo de la tabla */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -108,16 +99,14 @@ tbody tr:nth-child(even) {
     background-color: #f1f1f1;
 }
 
-/* Estilo del título centrado y color azul */
 .centrar-titulo {
     text-align: center;
-    color: #38B6FF; /* Azul claro */
+    color: #38B6FF;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-top: 20px;
-    font-size: 2em; /* Tamaño del texto para hacerlo más prominente */
+    font-size: 2em;
 }
 
-/* Estilo del contenido */
 .content {
     padding: 20px;
 }
@@ -150,7 +139,6 @@ main h2 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/* Estilo del footer */
 footer {
     background-color: #0097A7;
     color: white;
@@ -219,19 +207,18 @@ footer {
 }
 
 .crear button {
-    background-color: #007bff; /* Color azul */
-    color: white; /* Texto blanco */
-    border: none; /* Sin borde */
-    padding: 10px 20px; /* Espaciado interno */
-    font-size: 16px; /* Tamaño de la fuente */
-    border-radius: 5px; /* Bordes redondeados */
-    cursor: pointer; /* Cursor de mano al pasar sobre el botón */
-    transition: background-color 0.3s ease; /* Transición suave al pasar el ratón */
+    background-color: #007bff; 
+    color: white; 
+    border: none;
+    padding: 10px 20px; 
+    font-size: 16px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
 }
 
-/* Cambiar color al pasar el ratón */
 .crear button:hover {
-    background-color: #0056b3; /* Color azul más oscuro cuando se pasa el ratón */
+    background-color: #0056b3; 
 }
 
 .btn-azul {

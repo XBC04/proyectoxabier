@@ -1,8 +1,8 @@
 /* Estilo global */
 body {
     font-family: Arial, sans-serif;
-    background-color: #e3f2fd; /* Azul claro */
-    color: #0d47a1; /* Azul oscuro */
+    background-color: #e3f2fd; 
+    color: #0d47a1; 
     margin: 0;
     padding: 0;
     display: flex;
@@ -10,35 +10,32 @@ body {
     align-items: center;
     height: 100vh;
     text-align: center;
-    flex-direction: column; /* Garantiza que los elementos estén uno debajo del otro */
+    flex-direction: column; 
 }
 
-/* Estilo para el encabezado */
 h1 {
-    color: #1565c0; /* Azul intermedio */
+    color: #1565c0; 
     font-size: 2.5rem;
-    margin-bottom: 20px; /* Espacio entre h1 y el siguiente elemento */
+    margin-bottom: 20px; 
 }
 
-/* Estilo para el párrafo */
 p {
     font-size: 1.2rem;
-    color: #0d47a1; /* Azul oscuro */
-    margin: 0 0 30px; /* Espacio debajo del párrafo */
+    color: #0d47a1; 
+    margin: 0 0 30px; 
 }
 
-/* Estilo para el enlace */
 a {
     text-decoration: none;
-    color: #ffffff; /* Blanco */
-    background-color: #1e88e5; /* Azul brillante */
+    color: #ffffff;
+    background-color: #1e88e5; 
     padding: 10px 20px;
     border-radius: 5px;
     font-size: 1rem;
     transition: background-color 0.3s ease;
-    margin-top: 10px; /* Espacio adicional si es necesario */
+    margin-top: 10px; 
 }
 
 a:hover {
-    background-color: #1565c0; /* Azul más oscuro al pasar el ratón */
+    background-color: #1565c0; 
 }
