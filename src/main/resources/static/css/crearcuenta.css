@@ -25,7 +25,6 @@ form {
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); 
     max-width: 400px;
     width: 100%;
-    border: 1px solid #90caf9; 
 }
 
 label {
@@ -41,7 +40,6 @@ input[type="text"] {
     padding: 12px;
     margin-top: 5px;
     margin-bottom: 20px;
-    border: 1px solid #64b5f6;
     border-radius: 6px;
     font-size: 1rem;
     background-color: #e3f2fd;

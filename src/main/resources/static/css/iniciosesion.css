@@ -1,5 +1,4 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #e3f2fd; 
     color: #1e3a5f; 
     display: flex;
@@ -22,10 +21,9 @@ form {
     background-color: #ffffff; 
     padding: 25px 35px;
     border-radius: 10px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Softer shadow */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
     max-width: 400px;
     width: 100%;
-    border: 1px solid #90caf9; /* Light blue border */
 }
 
 label {
@@ -41,14 +39,12 @@ input[type="text"] {
     padding: 12px;
     margin-top: 5px;
     margin-bottom: 20px;
-    border: 1px solid #64b5f6; 
     border-radius: 6px;
     font-size: 1rem;
     background-color: #e3f2fd; 
     color: #1e3a5f; 
 }
 
-/* Submit button styles */
 input[type="submit"] {
     background-color: #1565c0; 
     color: #ffffff;
@@ -68,6 +64,5 @@ input[type="submit"]:hover {
 
 .error {
     border: 1px solid #e57373; 
-    background-color: #ffebee; 
 }
 
