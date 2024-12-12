@@ -40,15 +40,15 @@
         <aside>
             <h1><b>OFERTAS</b></h1><br>
             <li th:each="oferta : ${ofertas}">
-                <h3 th:text="${oferta.nombre}">Nombre de la oferta</h3>
-                <p th:text="${oferta.descripcion}">Descripción de la oferta</p>
+                <h3 th:text="${oferta.nombre}"></h3>
+                <p th:text="${oferta.descripcion}"></p>
                 <p>
                     <strong>Antes:</strong>
-                    <span th:text="${oferta.precioAntes}">49.99€</span>
+                    <span th:text="${oferta.precioAntes}"></span>
                 </p>
                 <p>
                     <strong>Ahora:</strong>
-                    <span th:text="${oferta.precioAhora}">39.99€</span>
+                    <span th:text="${oferta.precioAhora}"></span>
                 </p>
             </li>
         </aside>
