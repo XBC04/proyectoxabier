@@ -23,13 +23,11 @@ public class AlfombraRestController {
     @Autowired
     private AlfombraService alfombraService;
 
-    // Obtener todas las alfombras
     @GetMapping
     public List<Alfombra> listarAlfombras() {
         return alfombraService.obtenerTodas();
     }
 
-    // Obtener una alfombra por ID
     @GetMapping("/{id}")
     public ResponseEntity<Alfombra> obtenerAlfombraPorId(@PathVariable Long id) {
         Optional<Alfombra> alfombra = alfombraService.obtenerPorId(id);
@@ -40,7 +38,6 @@ public class AlfombraRestController {
         }
     }
 
-    // Crear una nueva alfombra
     @PostMapping
     public ResponseEntity<Alfombra> crearAlfombra(@RequestBody Alfombra alfombra) {
         Alfombra nuevaAlfombra = alfombraService.guardarAlfombra(alfombra);

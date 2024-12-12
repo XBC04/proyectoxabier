@@ -23,20 +23,17 @@ public class SabanaRestController {
     @Autowired
     private SabanaService sabanaService;
 
-    // Obtener todas las sabanas
     @GetMapping
     public List<Sabana> listarSabanas() {
         return sabanaService.obtenerTodas();
     }
 
-    // Crear una nueva sabana
     @PostMapping
     public ResponseEntity<Sabana> crearSabana(@RequestBody Sabana sabana) {
         Sabana nuevaSabana = sabanaService.guardarSabana(sabana);
         return new ResponseEntity<>(nuevaSabana, HttpStatus.CREATED);
     }
 
-    // Obtener una sabana por su ID
     @GetMapping("/{id}")
     public ResponseEntity<Sabana> obtenerSabanaPorId(@PathVariable Long id) {
         Optional<Sabana> sabana = sabanaService.obtenerPorId(id);
