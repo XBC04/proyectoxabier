@@ -52,6 +52,6 @@ input[type="submit"]:hover {
 }
 
 .error {
-    border: 1px solid #e57373; 
+    border: 1px solid #FF0000; 
 }
 

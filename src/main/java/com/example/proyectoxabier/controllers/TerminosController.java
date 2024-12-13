@@ -8,6 +8,6 @@ public class TerminosController {
 
     @GetMapping("/terminos")
     public String mostrarTerminos() {
-        return "terminos"; //
+        return "terminos"; 
     }
 }
